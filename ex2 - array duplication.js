@@ -22,6 +22,7 @@ function updateStudentAge(firstName, lastName, newAge) {
   if (student) {
     student.age = newAge;
   }
+  //STUDENTS_DATA.forEach((stu) => {if (stu.firstName === firstName && stu.lastName === lastName) {stu.age = newAge}})
 }
 
 // 1 - Update An age to 30
