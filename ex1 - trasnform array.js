@@ -13,10 +13,7 @@
 function transformToObjects(listOfNumbers) {
   result = [];
   // Write your code here
-  for(let i = 0; i < listOfNumbers.length; i++) {
-    var obj = {"val": listOfNumbers[i]};
-    result.push(obj)
-  }
+  listOfNumbers.forEach(num => result.push({"val": num}))
   return result;
 }
 
