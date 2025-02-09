@@ -19,10 +19,9 @@ const STUDENTS_DATA = [
  */
 function updateStudentAge(firstName, lastName, newAge) {
   let student = STUDENTS_DATA.find((s) => s.firstName === firstName && s.lastName === lastName);
-  if (student) {
-    student.age = newAge;
-  }
-  //STUDENTS_DATA.forEach((stu) => {if (stu.firstName === firstName && stu.lastName === lastName) {stu.age = newAge}})
+  if (student) student.age = newAge; //if student null false, not null true
+  //or this : 
+  // STUDENTS_DATA.forEach((stu) => {if (stu.firstName === firstName && stu.lastName === lastName) {stu.age = newAge}})
 }
 
 // 1 - Update An age to 30

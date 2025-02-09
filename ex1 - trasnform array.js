@@ -13,7 +13,7 @@
 function transformToObjects(listOfNumbers) {
   result = [];
   // Write your code here
-  result = listOfNumbers.map(num => ({"value": num}))
+  result = listOfNumbers.map(num => ({"val": num}))
   return result;
 }
 
